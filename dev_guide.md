@@ -29,9 +29,9 @@ Check version of npm
 ```
 Note :
  - tested on 
-  - Laragon, Windows 10 - npm 5.5.1
+   - Laragon, Windows 10 - npm 5.5.1
  - to be tested :
-  - Ubuntu
+   - Ubuntu
 
 
 # How to test changes ?
