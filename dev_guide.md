@@ -36,7 +36,7 @@ Note :
 # Which files to change ?
 ```
 > vi src/volore-getting-started.js
-> vi test/volore-getting-started.js
+> vi test/volore-getting-started-test.js
 ```
 
 # How to test changes ?
