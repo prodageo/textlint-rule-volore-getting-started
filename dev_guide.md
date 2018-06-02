@@ -42,6 +42,9 @@ Test with scripts in test/
 Another way for testing (based on the file given on the command line)
 > textlint --rulesdir lib/ test/sample.md -f pretty-error
 ```
+## Test samples
+Look at the templates of FilRouge projects
+ - https://github.com/umlp/matricefilr10moa/blob/master/1.INIT/120.cdc.md
 
 ## How to commit ?
 ```
