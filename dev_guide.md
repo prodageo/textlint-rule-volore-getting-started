@@ -33,6 +33,11 @@ Note :
  - to be tested :
    - Ubuntu
 
+# Which files to change ?
+```
+> vi src/volore-getting-started.js
+> vi test/volore-getting-started.js
+```
 
 # How to test changes ?
 ```
