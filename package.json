@@ -3,18 +3,19 @@
   "keywords": [
     "textlintrule"
   ],
-  "main": "lib/index.js",
-  "files": [
-    "lib/",
-    "src/"
-  ],
+  "main": "lib/no-todo.js",
   "scripts": {
     "test": "textlint-scripts test",
     "build": "textlint-scripts build",
     "prepublish": "npm run --if-present build"
   },
   "devDependencies": {
-    "textlint-scripts": "^1.2.4"
+    "textlint-rule-no-todo": "^2.0.0",
+    "textlint-scripts": "^1.2.4",
+    "textlint-tester": "^1.1.0"
+  },
+  "dependencies": {
+    "textlint-rule-helper": "^1.2.0"
   },
   "name": "textlint-rule-volore-getting-started",
   "description": "sandbox for learning textlint rule",

@@ -1,0 +1,7 @@
+{
+  "rules": {
+    "no-todo": {
+        "key1": "value1"
+    }
+  }
+}

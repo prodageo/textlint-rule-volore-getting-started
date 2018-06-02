@@ -2,9 +2,10 @@
 const TextLintTester = require("textlint-tester");
 const tester = new TextLintTester();
 // rule
-const rule = require("../src/index");
+import rule from "../src/volore-getting-started";
+// const rule = require("../src/volore-getting-started");
 // ruleName, rule, { valid, invalid }
-tester.run("rule", rule, {
+tester.run("volore-getting-started", rule, {
     valid: [
         // no problem
         "text"
