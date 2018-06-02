@@ -2,7 +2,7 @@
 
 # Project follow-up
 ## V1
-#2
+GH-26
 
 # How to setup a development platform in terminal
 ```
