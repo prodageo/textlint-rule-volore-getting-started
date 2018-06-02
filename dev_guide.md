@@ -15,9 +15,9 @@ Check version of npm
 > mv src default/.
 > mv test default/.
 > mv package.json default/.
-> mv  package-lock.json default/.
+> mv package-lock.json default/.
 > cd ..
-> git clone https://github.com/prodageo/textlint-rule-volore-getting-started tempo
+> git clone https://github.com/prodageo/textlint-rule-volore-getting-started temp
 > mv temp/src textlint-rule-volore-getting-started/.
 > mv temp/test textlint-rule-volore-getting-started/.
 > mv temp/package.json textlint-rule-volore-getting-started/.
@@ -35,19 +35,20 @@ Note :
 
 
 # How to test changes ?
+```
 > npm run build
 Test with scripts in test/
 > npm test
 Another way for testing (based on the file given on the command line)
 > textlint --rulesdir lib/ test/sample.md -f pretty-error
+```
 
 ## How to commit ?
+```
 > git add *
 > git commit -am "Fixes #xxx : comment"
 > git push origin master
-
-# Known intricacies
-
+```
 
 # Issues
 
@@ -56,9 +57,10 @@ Another way for testing (based on the file given on the command line)
  
 ## Closing issue
 Put "Fixes #nnn :" in the commit message.
+```
 For closing issue #1
 > git commit -am "Fixes #1 : comment"
-
+```
 
 # Resources
  - https://github.com/textlint/textlint/blob/master/docs/rule.md : guide for envt dev setup
@@ -66,6 +68,7 @@ For closing issue #1
 # Annexes
 
 ## Annex 1 : questions from create-textlint-rule volore-getting-started
+```
 Initialized empty Git repository in C:/Apps/laragon/www/volore/textlint-rule-volere-getting-started/.git/
 Input information about your textlint rule                                                               
 This utility will walk you through creating a package.json file.                                         
@@ -83,4 +86,5 @@ version: (1.0.0)
 description: aaa                                                                                         
 git repository: https://github.com/prodageo/textlint-rule-volore-getting-started.git                     
 author: fbab                                                                                             
-license: (ISC)                                                                                           
+license: (ISC)       
+```
