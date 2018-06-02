@@ -50,6 +50,7 @@ Look at the templates of FilRouge projects
 ```
 > git add *
 > git commit -am "Fixes #xxx : comment"
+> git pull origin master
 > git push origin master
 ```
 
