@@ -1,26 +1,48 @@
 # Developper guide
 
-# How to setup a development envt in terminal
+# How to setup a development platform in terminal
 Check version of npm
 > npm -version
 > npm install create-textlint-rule -g
+
+# How to setup the project envt in terminal
 > create-textlint-rule volore-getting-started
-> git clone https://github.com/prodageo/textlint-rule-volore-getting-started
+> cd textlint-rule-volore-getting-started
+> mkdir default
+> mv src default/.
+> mv test default/.
+> mv package.json default/.
+> mv  package-lock.json default/.
+> cd ..
+> git clone https://github.com/prodageo/textlint-rule-volore-getting-started tempo
+> mv temp/src textlint-rule-volore-getting-started/.
+> mv temp/test textlint-rule-volore-getting-started/.
+> mv temp/package.json textlint-rule-volore-getting-started/.
+> mv temp/package-lock.json textlint-rule-volore-getting-started/.
+> rm -rf temp
+> cd textlint-rule-volore-getting-started
+> git pull origin master
 > npm i -d
 
 Note :
- - tested on Laragon, Windows 10 - npm 5.5.1
- - to be tested : on Ubuntu
+ - tested on 
+  - Laragon, Windows 10 - npm 5.5.1
+ - to be tested :
+  - Ubuntu
 
 
-# How to test changes
+# How to test changes ?
 > npm run build
 Test with scripts in test/
 > npm test
 Another way for testing (based on the file given on the command line)
 > textlint --rulesdir lib/ test/sample.md -f pretty-error
 
- 
+## How to commit ?
+> git add *
+> git commit -am "Fixes #xxx : comment"
+> git push origin master
+
 # Known intricacies
 
 
