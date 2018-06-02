@@ -2,7 +2,7 @@
 
 # Project follow-up
 ## V1
- - #2
+ - https://github.com/prodageo/textlint-rule-volore-getting-started/issues/3
  - #3
  - prodageo/textlint-rule-volore-getting-started#1
 
