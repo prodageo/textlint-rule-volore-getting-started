@@ -1,5 +1,9 @@
 # Developer guide
 
+# Project follow-up
+## V1
+#2
+
 # How to setup a development platform in terminal
 ```
 Check version of npm
