@@ -9,3 +9,13 @@ Note :
  - to be tested : on Ubuntu
  
 # Known intricacies
+
+
+# Issues
+
+## Issue repository
+ - https://github.com/prodageo/textlint-rule-volore-getting-started/issues
+ 
+## Closing issue
+For closing issue #1
+> git commit -am "Fixes #1 : comment"
