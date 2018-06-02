@@ -1,11 +1,14 @@
-# Developper guide
+# Developer guide
 
 # How to setup a development platform in terminal
+```
 Check version of npm
 > npm -version
 > npm install create-textlint-rule -g
+```
 
 # How to setup the project envt in terminal
+```
 > create-textlint-rule volore-getting-started
 > cd textlint-rule-volore-getting-started
 > mkdir default
@@ -23,7 +26,7 @@ Check version of npm
 > cd textlint-rule-volore-getting-started
 > git pull origin master
 > npm i -d
-
+```
 Note :
  - tested on 
   - Laragon, Windows 10 - npm 5.5.1
