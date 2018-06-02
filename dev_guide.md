@@ -80,6 +80,7 @@ For closing issue #1
 # Resources
  - https://github.com/textlint/textlint/blob/master/docs/rule.md : guide for envt dev setup
  - https://github.com/textlint/textlint/blob/master/docs/rule-advanced.md : comptage de mots, etc ...
+ - https://github.com/prodageo/textlint-rule-volore-getting-started/blob/master/how_to_read_tests_results.md : How to read test ?
 
 # Annexes
 
