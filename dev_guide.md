@@ -2,7 +2,9 @@
 
 # Project follow-up
 ## V1
- - GH-26
+ - #2
+ - #3
+ - prodageo/textlint-rule-volore-getting-started#1
 
 # How to setup a development platform in terminal
 ```
