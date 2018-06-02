@@ -1,3 +1,5 @@
+See [Developer Guide](https://github.com/prodageo/textlint-rule-volore-getting-started/blob/master/dev_guide.md).
+
 # textlint-rule-volore-getting-started
 
 sandbox for learning textlint rule
