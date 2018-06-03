@@ -51,7 +51,7 @@ Note :
 Test with scripts in test/
 > npm test
 Another way for testing (based on the file given on the command line)
-> textlint --rulesdir lib/ test/sample.md -f pretty-error
+> .\node_modules\.bin\textlint --rulesdir lib/ test/sample.md -f pretty-error
 ```
 ## Test samples
 Look at the templates of FilRouge projects
