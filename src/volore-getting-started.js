@@ -16,6 +16,36 @@ export default function (context) {
             ^^^^^
             Hit!
         */
+		[Syntax.Document](node){
+			//recherche du sous titre 1.But du projet dans le document
+			const text = getSource(node);
+			const match = text.match(/## 1. But du projet/i);
+			if(!match){
+				report(node, new RuleError(`Sous-titre "1.But du projet" absent`));
+			}
+		},
+			
+		[Syntax.Header](node){
+			//si un sous titre 1.But du projet est trouvé,  
+			//on vérifie si le parent est bon
+			if (helper.isChildNode(node, [Syntax.Link, Syntax.Image, Syntax.BlockQuote])) {
+                return;
+            }
+			const text = getSource(node);
+			if(text== "## 1. But du projet"){
+				const parents = helper.getParents(node);
+				if(parents[1]!=null){
+					const text2 = parents[1];
+					if(text2=="# I	Fondements du projet"){
+						return;
+					}
+					const tt = text2;
+					report(node, new RuleError(`Pas le bon '${tt}'`));
+				}
+				const depth1 = node.depth;
+				report(node, new RuleError(`LA PROFONDEUR DU HEADER ${depth1}`));
+			}
+		},
         [Syntax.Str](node) {
             if (helper.isChildNode(node, [Syntax.Link, Syntax.Image, Syntax.BlockQuote])) {
                 return;
@@ -23,10 +53,10 @@ export default function (context) {
             // get text from node
             const text = getSource(node);
             // does text contain "todo:"?
-            const match = text.match(/todo:/i);
+            const match = text.match(/azezertyu/i);
             if (match) {
                 const todoText = text.substring(match.index);
-                report(node, new RuleError(`Found TODO: '${todoText}'`, {
+                report(node, new RuleError(`zefgh: '${todoText}'`, {
                     index: match.index
                 }));
             }
@@ -39,14 +69,5 @@ export default function (context) {
               ^^^
               Hit!
         */
-        [Syntax.ListItem](node) {
-            const text = context.getSource(node);
-            const match = text.match(/\[\s+\]\s/i);
-            if (match) {
-                report(node, new context.RuleError(`Found TODO: '${text}'`, {
-                    index: match.index
-                }));
-            }
-        }
     };
 }
