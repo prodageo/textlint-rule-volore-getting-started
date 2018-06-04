@@ -51,7 +51,7 @@ Note :
 Test with scripts in test/
 > npm test
 Another way for testing (based on the file given on the command line)
-> textlint --rulesdir lib/ test/sample.md -f pretty-error
+> .\node_modules\.bin\textlint --rulesdir lib/ test/sample.md -f pretty-error
 ```
 ## Test samples
 Look at the templates of FilRouge projects
@@ -81,7 +81,8 @@ For closing issue #1
  - https://github.com/textlint/textlint/blob/master/docs/rule.md : guide for envt dev setup
  - https://github.com/textlint/textlint/blob/master/docs/rule-advanced.md : comptage de mots, etc ...
  - https://github.com/prodageo/textlint-rule-volore-getting-started/blob/master/how_to_read_tests_results.md : How to read test ?
-
+ - https://doc.esdoc.org/github.com/azu/textlint/
+ 
 # Annexes
 
 ## Annex 1 : questions from create-textlint-rule volore-getting-started
